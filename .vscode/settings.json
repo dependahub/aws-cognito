@@ -1,0 +1,23 @@
+{
+	"editor.defaultFormatter": "samverschueren.linter-xo",
+	"editor.tabSize": 2,
+	"editor.indentSize": "tabSize",
+	"[javascript][typescript]": {
+		"editor.defaultFormatter": "samverschueren.linter-xo",
+	},
+	"[json][jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.detectIndentation": true,
+		"editor.suggest.insertMode": "replace",
+	},
+	"xo.enable": true,
+	"xo.format.enable": true,
+	"xo.overrideSeverity": "info",
+	"xo.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"ava-runner.experimentalEnabled": true,
+}

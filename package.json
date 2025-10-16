@@ -1,7 +1,7 @@
 {
-  "name": "template-node-jsdoc-package",
+  "name": "@dependahub/aws-cognito",
   "version": "1.0.0",
-  "description": "javascript and JSDoc package Template Repository",
+  "description": "Cognito操作モジュール",
   "author": "DependaHub",
   "license": "MIT",
   "main": "src/index.js",
@@ -10,6 +10,10 @@
   "scripts": {
     "build": "rm -rf @types && tsc",
     "test": "xo && ava"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.782.0",
+    "@aws-sdk/credential-providers": "^3.782.0"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
