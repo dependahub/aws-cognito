@@ -1,0 +1,27 @@
+{
+  "name": "template-node-jsdoc-package",
+  "version": "1.0.0",
+  "description": "javascript and JSDoc package Template Repository",
+  "author": "DependaHub",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "types": "@types/index.d.ts",
+  "scripts": {
+    "build": "rm -rf @types && tsc",
+    "test": "xo && ava"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "ava": "^6.2.0",
+    "xo": "^0.60.0"
+  },
+  "xo": {
+    "ignores": [
+      "@types"
+    ],
+    "rules": {
+      "capitalized-comments": "off"
+    }
+  }
+}
