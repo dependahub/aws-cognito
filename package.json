@@ -2,8 +2,6 @@
   "name": "@dependahub/aws-cognito",
   "version": "1.0.0",
   "description": "Cognito操作モジュール",
-  "author": "DependaHub",
-  "license": "MIT",
   "main": "src/index.js",
   "type": "module",
   "types": "@types/index.d.ts",
@@ -27,5 +25,19 @@
     "rules": {
       "capitalized-comments": "off"
     }
-  }
+  },
+  "homepage": "https://github.com/dependahub/aws-cognito#readme",
+  "bugs": {
+    "url": "https://github.com/dependahub/aws-cognito/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dependahub/aws-cognito.git"
+  },
+  "author": "DependaHub",
+  "license": "MIT",
+  "keywords": [
+    "aws",
+    "cognito"
+  ]
 }
