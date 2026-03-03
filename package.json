@@ -7,25 +7,29 @@
   "types": "@types/index.d.ts",
   "scripts": {
     "build": "rm -rf @types && tsc",
-    "test": "xo && ava"
+    "test": "xo && node --test"
   },
   "dependencies": {
-    "@aws-sdk/client-cognito-identity-provider": "^3.782.0",
-    "@aws-sdk/credential-providers": "^3.782.0"
+    "@aws-sdk/client-cognito-identity-provider": "^3.1000.0",
+    "@aws-sdk/credential-providers": "^3.1000.0"
   },
   "devDependencies": {
-    "@types/node": "^24.3.1",
-    "ava": "^6.2.0",
-    "xo": "^0.60.0"
+    "@types/node": "^25.3.3",
+    "xo": "^1.2.3"
   },
-  "xo": {
-    "ignores": [
-      "@types"
-    ],
-    "rules": {
-      "capitalized-comments": "off"
+  "xo": [
+    {
+      "ignores": [
+        "**/@types/**"
+      ]
+    },
+    {
+      "rules": {
+        "capitalized-comments": "off",
+        "@eslint-community/eslint-comments/no-unused-disable": "off"
+      }
     }
-  },
+  ],
   "homepage": "https://github.com/dependahub/aws-cognito#readme",
   "bugs": {
     "url": "https://github.com/dependahub/aws-cognito/issues"
