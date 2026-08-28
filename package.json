@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.3.3",
-    "xo": "^1.2.3"
+    "xo": "^4.0.0"
   },
   "xo": [
     {
@@ -26,7 +26,12 @@
     {
       "rules": {
         "capitalized-comments": "off",
-        "@eslint-community/eslint-comments/no-unused-disable": "off"
+        "@eslint-community/eslint-comments/no-unused-disable": "off",
+        "jsdoc/informative-docs": "off",
+        "jsdoc/require-asterisk-prefix": "off",
+        "jsdoc/require-param-description": "off",
+        "jsdoc/require-returns-description": "off",
+        "jsdoc/require-description": "off"
       }
     }
   ],
